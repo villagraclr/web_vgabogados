@@ -8,7 +8,6 @@
 	display:block;
 	width:100%;
 	position:relative;
-
 }
 
 .menu-toggle {
@@ -56,8 +55,6 @@
 .menu ul li {
     display: inline-block;
     color: #fff;
-    padding: 18px 35px;
-    font-size: 18px;
     font-weight: 500;
 }
 
@@ -124,19 +121,39 @@
 }
 }
 
+@media (max-width: 575.98px) {
+	.menu ul li {
+		padding: 14px 13px;
+        font-size: 14px;
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.menu ul li {
+		padding: 14px 13px;
+        font-size: 14px;
+	}
+}
 @media (min-width:768.01px) and (max-width: 991.98px){
 	.menu ul li {
-		padding: 18px 15px;
+		padding: 14px 13px;
+        font-size: 14px;
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.menu ul li {
-		padding: 18px 35px;
+		padding: 16px 30px;
+        font-size: 16px;
 	}
 
 }
 
+@media (min-width: 1200px) {
+	.menu ul li {
+		padding: 18px 35px;
+        font-size: 18px;
+	}
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
