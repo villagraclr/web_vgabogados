@@ -1,6 +1,11 @@
 @props(['practice_areas'])
 @extends('../template.layout')
 @section('title','Inicio')
+
+@push('css')
+<link rel="stylesheet" href="{{asset('assets/css/slider.css')}}" />
+@endpush
+
 @section('content')
     <x-slider/>
     <x-about/>

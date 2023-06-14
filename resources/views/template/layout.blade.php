@@ -10,18 +10,27 @@
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/header.css')}}" />
+    @stack("css")
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}" />
 </head>
 <body>
-    @include('template.header')
-    <!--contenido-->
-    @yield('content')
-    <!--/contenido-->
-
-    @include('template.footer')
+      @include('template.header')
+      <!--contenido-->
+      @yield('content')
+      <!--/contenido-->
+      @include('template.footer')
     <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     @stack("js")
+<script>
+      $(document).ready (function(){
+        $('.menu-toggle').click(function(){
+          $('.menu-toggle').toggleClass('active')
+          $('.menu').toggleClass('active')
+        })
+      })
+</script>
 </body>
 </html>
