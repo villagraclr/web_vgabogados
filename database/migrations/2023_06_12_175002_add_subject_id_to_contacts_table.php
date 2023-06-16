@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::table('contacts', function (Blueprint $table) {
             //
-            $table->unsignedBigInteger('subjects_id')->after('practice_area_id');
-            $table->foreign('subjects_id')->references('id')->on('subjects');
+            $table->unsignedBigInteger('subject_id')->after('practice_area_id');
+            $table->foreign('subject_id')->references('id')->on('subjects');
         });
     }
 
@@ -25,8 +25,8 @@ return new class extends Migration
     {
         Schema::table('contacts', function (Blueprint $table) {
             //
-            $table->dropForeign('contacts_subjects_id_foreign');
-            $table->dropColumn('subjects_id');
+            $table->dropForeign('contacts_subject_id_foreign');
+            $table->dropColumn('subject_id');
         });
     }
 };
