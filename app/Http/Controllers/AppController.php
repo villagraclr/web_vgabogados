@@ -61,7 +61,7 @@ class AppController extends Controller
             'email'             =>  $request->input('email'),
             'phone'             =>  $request->input('phone'),
             'practice_area_title'  =>  $request->input('practice_area_title'),
-            'subjec_ttitle'        =>  $request->input('subjec_ttitle'),
+            'subject_title'        =>  $request->input('subject_title'),
             'subject'           =>  $request->input('subject'),
             'message'           =>  $request->input('message')
         ];

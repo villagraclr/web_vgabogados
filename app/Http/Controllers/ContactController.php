@@ -35,7 +35,8 @@ class ContactController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
-            'practice_area_id' => $request->subject,
+	    'practice_area_id' => $request->practice_area_id,
+	    'subject_id' => $request->subject_id,
             'message' => $request->message
         ];
         Contact::create($contactData);

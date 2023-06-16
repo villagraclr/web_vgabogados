@@ -23,7 +23,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ser-box">
                         <i class="fas fa-gavel"></i>
-                        <h3>CILVIL</h3>
+                        <h3>CIVIL</h3>
                         <p>Brindamos soluciones concretas en diversas áreas del derecho civil, incluyendo juicios de arrendamiento, posesiones efectivas, embargos, interdicción, cambio de nombre y más. Nuestro equipo legal tramita casos de manera eficiente, asegurando respuestas efectivas y soluciones adecuadas a las problemáticas legales.</p>
                     </div>
                 </div>

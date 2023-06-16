@@ -25,7 +25,7 @@
         </tr>
         <tr>
             <td>Motivo</td>
-            <td>{!! $mailData["subjec_ttitle"] !!}</td>
+            <td>{!! $mailData["subject_title"] !!}</td>
         </tr>
         <tr>
             <td colspan="2">
