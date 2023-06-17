@@ -4,32 +4,37 @@
  <title>VG Abogados Asociados</title>
 </head>
 <body>
-    <table class="">
+    <table width="670" style="border-collapse:collapse; with:100%;border:1px solid #000" class="" border=1>
     <thead>
         <tr>
-            <th colspan="2">{!! $mailData["subject"] !!}</th>
+            <th colspan="2" border=1>{!! $subject !!}</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Nombre</td>
-            <td>{!! $mailData["name"] !!}</td>
+            <td>{!! $nameFrom !!}</td>
         </tr>
         <tr>
             <td>Email</td>
-            <td>{!! $mailData["email"] !!}</td>
+            <td>{!! $email !!}</td>
+	</tr>
+ 	<tr>
+            <td>Teléfono</td>
+            <td>{!! $phone !!}</td>
         </tr>
+
         <tr>
             <td>Área de práctica</td>
-            <td>{!! $mailData["practice_area_title"] !!}</td>
+            <td>{!! $practiceAreaTitle !!}</td>
         </tr>
         <tr>
             <td>Motivo</td>
-            <td>{!! $mailData["subjec_ttitle"] !!}</td>
-        </tr>
+            <td>{!! $subjectTitle !!}</td>
+	</tr>
         <tr>
             <td colspan="2">
-                <p>{!! $mailData["message"] !!}</p>
+                <p>{!! $messageText !!}</p>
             </td>
         </tr>
     </tbody>

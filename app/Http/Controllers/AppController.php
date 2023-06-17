@@ -61,10 +61,11 @@ class AppController extends Controller
             'email'             =>  $request->input('email'),
             'phone'             =>  $request->input('phone'),
             'practice_area_title'  =>  $request->input('practice_area_title'),
-            'subjec_ttitle'        =>  $request->input('subjec_ttitle'),
+            'subject_title'        =>  $request->input('subject_title'),
             'subject'           =>  $request->input('subject'),
             'message'           =>  $request->input('message')
-        ];
+	];
+	
         Contact::create(
             [
                 'name'=>$request->input('name'),
@@ -75,10 +76,19 @@ class AppController extends Controller
                 'subject'=>$request->input('subject'),
                 'message'=>$request->input('message')
             ]
-        );
-        $to = $mailData["email"];
-        $email = new EmailMailable($mailData );
-        //Mail::to($to)->send($email);
+	);
+	$to = env('MAIL_TO_ADDRESS');
+	$cc = $request->input('email');
+	$email = new EmailMailable(
+		$request->input('name'),
+ 		$request->input('email'),
+ 		$request->input('phone'),
+ 		$request->input('practice_area_title'),
+ 		$request->input('subject_title'),
+ 		$request->input('subject'),
+ 		$request->input('message')
+	);
+	Mail::to($to)->cc($cc)->send($email);
 
         //$request->session()->flash('css', 'success');
         //$request->session()->flash('mensaje', "Se creó el registro exitosamente");
