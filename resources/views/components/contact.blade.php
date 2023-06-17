@@ -63,9 +63,7 @@
 
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea name="message" id="message" cols="30" rows="8" required="" data-error="Escriba mensaje" placeholder="Describa su caso" class="form-control">
-                                {{old('subject')}}
-                                </textarea>
+                                <textarea name="message" id="message" cols="30" rows="8" required="" data-error="Escriba mensaje" placeholder="Describa su caso" class="form-control">{{old('message') ? old('message') : ''}}</textarea>
                             </div>
                         </div>
 

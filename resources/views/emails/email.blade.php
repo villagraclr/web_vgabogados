@@ -4,10 +4,10 @@
  <title>VG Abogados Asociados</title>
 </head>
 <body>
-    <table class="">
+    <table width="670" style="border-collapse:collapse; with:100%;border:1px solid #000" class="" border=1>
     <thead>
         <tr>
-            <th colspan="2">{!! $subject !!}</th>
+            <th colspan="2" border=1>{!! $subject !!}</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +18,12 @@
         <tr>
             <td>Email</td>
             <td>{!! $email !!}</td>
+	</tr>
+ 	<tr>
+            <td>Teléfono</td>
+            <td>{!! $phone !!}</td>
         </tr>
+
         <tr>
             <td>Área de práctica</td>
             <td>{!! $practiceAreaTitle !!}</td>
@@ -26,7 +31,7 @@
         <tr>
             <td>Motivo</td>
             <td>{!! $subjectTitle !!}</td>
-        </tr>
+	</tr>
         <tr>
             <td colspan="2">
                 <p>{!! $messageText !!}</p>
