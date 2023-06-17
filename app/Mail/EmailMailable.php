@@ -6,26 +6,32 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class EmailMailable extends Mailable
 {
     use Queueable, SerializesModels;
-    public $to = [];
-    public $cc = [];
-    public $cco = [];
-    public $html = [];
-
-    public $mailData;
+    public $subject = "";
+    public $nameFrom = "";
+    public $email = "";
+    public $practiceAreaTitle = "";
+    public $subjectTitle = "";
+    public $messageText = "";
 
     /**
      * Create a new message instance.
      */
-    public function __construct($mailData)
+    public function __construct($subject, $name, $email, $practiceAreaTitle, $subjectTitle, $messageText)
     {
-        //
-        $this->mailData = $mailData;
+	    //
+	    $this->subject = $subject;
+	    $this->nameFrom = $name;
+            $this->email = $email;
+            $this->practiceAreaTitle = $practiceAreaTitle;
+            $this->subjectTitle = $subjectTitle;
+            $this->messageText = $messageText;
     }
 
     /**
@@ -33,8 +39,8 @@ class EmailMailable extends Mailable
      */
     public function envelope(): Envelope
     {
-        return new Envelope(
-            subject: 'Email Mailable',
+	return new Envelope(
+            subject: $this->subject
         );
     }
 
@@ -44,7 +50,7 @@ class EmailMailable extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'template.email',
+	    view: 'emails.email'
         );
     }
 
