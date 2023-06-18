@@ -15,7 +15,7 @@
             </div>
             <div class="row my_row_y mar-01">
                 <x-flash />
-                <form action="{{route('send')}}" method="post" name="contact_form" id="contact_form">
+                <form action="{{route('enviar')}}" method="post" name="contact_form" id="contact_form">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group">

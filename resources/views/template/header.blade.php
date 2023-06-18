@@ -11,7 +11,7 @@
                             </div>
 							<div class="col-md-7">
                                 <div class="center-block">
-								    <p class="logo text-center"><a href="{{route('index')}}">VG Abogados y Asociados</a></p>
+								    <p class="logo text-center"><a href="{{route('inicio')}}">VG Abogados y Asociados</a></p>
                                 </div>
                             </div>
                         </div>
@@ -22,10 +22,10 @@
                             <div class="my-nav">
                                 <div class="menu">
                                   <ul>
-                                    <li><a href="{{route('index')}}">Inicio</a></li>
-                                    <li><a href="{{route('about')}}">Quienes somos</a></li>
-                                    <li><a href="{{route('service')}}">Servicios</a></li>
-                                    <li><a href="{{route('contact')}}">Contáctanos</a></li>
+                                    <li><a href="{{route('inicio')}}">Inicio</a></li>
+                                    <li><a href="{{route('quienes-somos')}}">Quienes somos</a></li>
+                                    <li><a href="{{route('servicios')}}">Servicios</a></li>
+                                    <li><a href="{{route('contactanos')}}">Contáctanos</a></li>
                                   </ul>
                                 </div>
                             </div>

@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{{route('contact')}}">Contáctanos</a>
+                        <a href="{{route('contactanos')}}">Contáctanos</a>
                     </div>
                 </div>
             </div>
