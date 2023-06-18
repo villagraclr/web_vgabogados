@@ -13,12 +13,12 @@ use App\Http\Controllers\AppController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', [AppController::class, 'index'])->name('index');
-Route::get('/about', [AppController::class, 'about'])->name('about');
-Route::get('/service', [AppController::class, 'service'])->name('service');
-Route::get('/contact', [AppController::class, 'contact'])->name('contact');
+Route::get('/', [AppController::class, 'index'])->name('inicio');
+Route::get('/quienes-somos', [AppController::class, 'about'])->name('quienes-somos');
+Route::get('/servicios', [AppController::class, 'service'])->name('servicios');
+Route::get('/contactanos', [AppController::class, 'contact'])->name('contactanos');
 Route::post('api/fetch-practice-area', [AppController::class, 'fetchPracticeArea']);
-Route::post('/contact/send', [AppController::class, 'send'])->name('send');
+Route::post('/contactanos/enviar', [AppController::class, 'send'])->name('enviar');
 /*
 Route::get('/', function () {
     return view('welcome');
