@@ -18,7 +18,7 @@
                            <h2>Experiencia</h2>
                            <p>Experiencia legal sólida que marca la diferencia. Nuestro equipo experto brinda soluciones eficaces respaldadas por años de experiencia, asegurando resultados exitosos en cada caso.
                             </p>
-                            <a href="{{route('contact')}}">Contáctanos</a>
+                            <a href="{{route('contactanos')}}">Contáctanos</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  d-none d-md-block d-md-block d-xl-block d-lg-block d-md-block">
@@ -40,7 +40,7 @@
                            <h2>Compromiso</h2>
                            <p>Un compromiso inquebrantable con nuestros clientes. Nos dedicamos fervientemente a proteger sus intereses, brindando soluciones legales sólidas y personalizadas con el fin de obtener los resultados más favorables en todo momento.
                             </p>
-                            <a href="{{route('contact')}}">Contáctanos</a>
+                            <a href="{{route('contactanos')}}">Contáctanos</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  d-none d-md-block d-md-block d-xl-block d-lg-block d-md-block">
@@ -62,7 +62,7 @@
                            <h2>Calidad</h2>
                            <p>Nos enorgullece ofrecer un servicio de alta calidad, respaldado por nuestro compromiso con la excelencia, conocimientos especializados y dedicación inquebrantable a nuestros clientes.
                             </p>
-                            <a href="{{route('contact')}}">Contáctanos</a>
+                            <a href="{{route('contactanos')}}">Contáctanos</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  d-none d-md-block d-md-block d-xl-block d-lg-block d-md-block">
